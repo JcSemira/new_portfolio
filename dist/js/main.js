@@ -34,10 +34,10 @@ function toggleMenu(){
 window.onload = function() {
   Particles.init({
     selector: ".background",
-    maxParticles: 150,
+    maxParticles: 250,
     color: "#ffffff",
     sizeVariations: 4,
-    minDistance: 120,
+    minDistance: 100,
     connectParticles: false,
     responsive: [
       {
