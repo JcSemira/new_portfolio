@@ -35,10 +35,10 @@ window.onload = function() {
   Particles.init({
     selector: ".background",
     maxParticles: 150,
-    color: "#64ffda",
-    connectParticles: true,
-    sizeVariations: 6,
+    color: "#ffffff",
+    sizeVariations: 4,
     minDistance: 120,
+    connectParticles: false,
     responsive: [
       {
         breakpoint: 1170,
@@ -62,3 +62,4 @@ window.onload = function() {
     ]
   });
 };
+
