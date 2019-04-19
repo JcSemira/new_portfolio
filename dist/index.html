@@ -8,11 +8,23 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
+  <script src="https://s.cdpn.io/53148/requestAnimationFrame.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
   <title>Welcome to My Portfolio</title>
 </head>
 <body id="bg-img">
+    <div class="preload">
+        <div id="loader-wrapper">
+        
+          <div id="loader"></div>
+      
+          <div class="loader-section section-left"></div>
+          <div class="loader-section section-right"></div>
+      
+        </div>
+      </div>
   <header>
+
     <div class="menu-btn">
       <div class="btn-line"></div>
       <div class="btn-line"></div>
@@ -38,6 +50,7 @@
       </ul>
     </nav>
   </header>
+
   <main id="home">
     <h1 class="lg-heading">Jc <span class="text-secondary">Semira</span></h1>
     <h2 class="sm-heading">Frustrated Web Enthusiast, Web Developer & Designer</h2>
@@ -52,10 +65,12 @@
         <i class="fab fa-github fa-2x"></i>
       </a>
     </div>
-  </main>
   
+  </main>
+
   <canvas class="background"></canvas>
   <script src="js/particles.min.js"></script>
   <script src="js/main.js"></script>
+
 </body>
 </html>
