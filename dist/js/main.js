@@ -65,8 +65,7 @@ window.onload = function() {
       }
     ]
   });
-  setTimeout(function() {
-    $('.preload').addClass('loaded');
-  }, 3000);
-
+  var loader = document.getElementsByClassName('preload');
+  setTimeout(() => {document.getElementById('preload1').classList.add('loaded');}, 3000);
 };
+
