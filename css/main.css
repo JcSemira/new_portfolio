@@ -102,7 +102,7 @@ body {
   font-family: 'Quicksand', sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/hero1.jpg);
+    background: url(../img/bg-ulit.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -291,7 +291,7 @@ main {
   margin: -75px 0 0 -75px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #3498db;
+  border-top-color: #6F7ABF;
   z-index: 1001;
   animation: spin 2s linear infinite; }
   #loader:before {
@@ -303,7 +303,7 @@ main {
     bottom: 5px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #e74c3c;
+    border-top-color: #4A5180;
     animation: spin 3s linear infinite; }
   #loader:after {
     content: "";
@@ -314,7 +314,7 @@ main {
     bottom: 15px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #f9c922;
+    border-top-color: #94A2FF;
     animation: spin 1.5s linear infinite; }
 
 #loader-wrapper .loader-section {
