@@ -42,27 +42,28 @@ window.onload = function() {
     color: "#ffffff",
     sizeVariations: 4,
     minDistance: 100,
-    connectParticles: false,
+    connectParticles: true,
     responsive: [
       {
         breakpoint: 1170,
         maxParticles: 100,
-        connectParticles: false
+        connectParticles: true
       },
       {
         breakpoint: 768,
         options: {
           maxParticles: 90,
-          connectParticles: false
+          connectParticles: true
         }
       },
       {
         breakpoint: 500,
         options: {
           maxParticles: 100,
-          connectParticles: false
+          connectParticles: true
         }
-      }
+      },
+      
     ]
   });
   var loader = document.getElementsByClassName('preload');
