@@ -43,6 +43,42 @@ window.onload = function() {
     sizeVariations: 4,
     minDistance: 100,
     connectParticles: true,
+    "opacity":{
+      value: 0.5,
+      random: false,
+      "anim":{
+        enable: false,
+        speed: 1,
+        opacity_min: 0.1,
+        sync: false
+      }
+    },
+    
+    "interactivity":{
+      detect_on:"canvas",
+      "events":{
+        "onhover":{
+          enable: false,
+          mode: "repulse"
+        },
+        "onclick":{
+          enable: true,
+          mode: "push"
+        },
+        resize: true
+      },
+      "repulse": {
+        distace: 400,
+        duration: 0.4
+      },
+      "push": {
+        particles_nb: 4
+      },
+      "remove": {
+        particles_nb:2
+      },
+      retina_detect: true
+    },
     responsive: [
       {
         breakpoint: 1170,
@@ -63,7 +99,6 @@ window.onload = function() {
           connectParticles: true
         }
       },
-      
     ]
   });
   var loader = document.getElementsByClassName('preload');
