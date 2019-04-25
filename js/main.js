@@ -65,6 +65,7 @@ window.onload = function() {
       },
     ]
   });
+  
   var loader = document.getElementsByClassName('preload');
   setTimeout(() => {document.getElementById('preload1').classList.add('loaded');}, 3000);
 };
