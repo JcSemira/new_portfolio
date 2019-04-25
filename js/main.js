@@ -43,42 +43,6 @@ window.onload = function() {
     sizeVariations: 4,
     minDistance: 100,
     connectParticles: true,
-    "opacity":{
-      value: 0.5,
-      random: false,
-      "anim":{
-        enable: false,
-        speed: 1,
-        opacity_min: 0.1,
-        sync: false
-      }
-    },
-    
-    "interactivity":{
-      detect_on:"canvas",
-      "events":{
-        "onhover":{
-          enable: false,
-          mode: "repulse"
-        },
-        "onclick":{
-          enable: true,
-          mode: "push"
-        },
-        resize: true
-      },
-      "repulse": {
-        distace: 400,
-        duration: 0.4
-      },
-      "push": {
-        particles_nb: 4
-      },
-      "remove": {
-        particles_nb:2
-      },
-      retina_detect: true
-    },
     responsive: [
       {
         breakpoint: 1170,
@@ -95,8 +59,8 @@ window.onload = function() {
       {
         breakpoint: 500,
         options: {
-          maxParticles: 100,
-          connectParticles: true
+          maxParticles: 350,
+          connectParticles: false
         }
       },
     ]
@@ -104,4 +68,20 @@ window.onload = function() {
   var loader = document.getElementsByClassName('preload');
   setTimeout(() => {document.getElementById('preload1').classList.add('loaded');}, 3000);
 };
+var mymap = L.map('mapid').setView([14.455945, 121.037672], 15);
+
+L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_nolabels/{z}/{x}/{y}.png', {
+  maxZoom: 18,
+  id: 'mapbox.streets'
+}).addTo(mymap);
+
+L.marker([14.455945, 121.037672]).addTo(mymap)
+  .bindPopup("<b>Dr Arcadio Santos Avenue</b><br />San Antonio, Manila, 1700 Metro Manila").openPopup();
+
+var popup = L.popup();
+
+
+
+
+
 
