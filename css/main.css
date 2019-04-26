@@ -102,7 +102,7 @@ body {
   font-family: 'Quicksand', sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/bg-ulit.jpg);
+    background: url(../img/bg-matrix.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -121,7 +121,7 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  height: 100vh; }
+  height: 100vh !important; }
 
 h1, h2, h3 {
   margin: 0;
@@ -298,7 +298,7 @@ main {
   margin: -75px 0 0 -75px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #6F7ABF;
+  border-top-color: #a7d7c5;
   z-index: 1001;
   animation: spin 2s linear infinite; }
   #loader:before {
@@ -310,7 +310,7 @@ main {
     bottom: 5px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #4A5180;
+    border-top-color: #74b49b;
     animation: spin 3s linear infinite; }
   #loader:after {
     content: "";
@@ -321,7 +321,7 @@ main {
     bottom: 15px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #94A2FF;
+    border-top-color: #5c8d89;
     animation: spin 1.5s linear infinite; }
 
 #loader-wrapper .loader-section {

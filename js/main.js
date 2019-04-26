@@ -1,7 +1,3 @@
-
-
-
-
 const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu');
 const menuNav = document.querySelector('.menu-nav');
@@ -38,11 +34,11 @@ function toggleMenu(){
 window.onload = function() {
   Particles.init({
     selector: ".background",
-    maxParticles: 250,
+    maxParticles: 500,
     color: "#ffffff",
     sizeVariations: 4,
     minDistance: 100,
-    connectParticles: true,
+    connectParticles: false,
     responsive: [
       {
         breakpoint: 1170,
@@ -76,12 +72,19 @@ L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_nolabels/{z
   id: 'mapbox.streets'
 }).addTo(mymap);
 
-L.marker([14.455945, 121.037672]).addTo(mymap)
+L.marker([14.455945, 121.037672], {
+  bounceOnAdd: true,
+  bounceOnAddOptions: {duration: 500, height: 100, loop: 2},
+  bounceOnAddCallback: function() {console.log("done");}
+}).addTo(mymap)
   .bindPopup("<b>Dr Arcadio Santos Avenue</b><br />San Antonio, Manila, 1700 Metro Manila").openPopup();
 
 var popup = L.popup();
 
-
+marker = new L.Marker([48.85, 2.35], {bounceOnAdd: true}).addTo(map);
+marker.on('click', function () {
+    marker.bounce({duration: 500, height: 100});
+});
 
 
 
