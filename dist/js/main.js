@@ -34,11 +34,11 @@ function toggleMenu(){
 window.onload = function() {
   Particles.init({
     selector: ".background",
-    maxParticles: 500,
+    maxParticles: 150,
     color: "#ffffff",
     sizeVariations: 4,
     minDistance: 100,
-    connectParticles: false,
+    connectParticles: true,
     responsive: [
       {
         breakpoint: 1170,
@@ -67,9 +67,9 @@ window.onload = function() {
 };
 var mymap = L.map('mapid').setView([14.455945, 121.037672], 15);
 
-L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_nolabels/{z}/{x}/{y}.png', {
+L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
   maxZoom: 18,
-  id: 'mapbox.streets'
+  id: 'mapbox.streets',
 }).addTo(mymap);
 
 L.marker([14.455945, 121.037672], {
