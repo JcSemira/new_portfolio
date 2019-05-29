@@ -24,7 +24,9 @@ body {
   z-index: -1;
   height: 100vh!important;
 }
-
+#myCanvas{
+  display: none;
+}
 //Headings
 h1,h2,h3 {
   margin: 0;
