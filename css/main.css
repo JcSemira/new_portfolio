@@ -123,6 +123,9 @@ body {
   z-index: -1;
   height: 100vh !important; }
 
+#myCanvas {
+  display: none; }
+
 h1, h2, h3 {
   margin: 0;
   font-weight: 400; }
