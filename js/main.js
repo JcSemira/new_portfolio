@@ -64,6 +64,7 @@ window.onload = function() {
   
   var loader = document.getElementsByClassName('preload');
   setTimeout(() => {document.getElementById('preload1').classList.add('loaded');}, 3000);
+  
 };
 var mymap = L.map('mapid').setView([14.455945, 121.037672], 15);
 
