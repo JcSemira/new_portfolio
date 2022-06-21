@@ -55,16 +55,16 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("../img/250.png");
+      background: url("../img/250.jpg");
       border-radius: 50%;
-      border: 3px solid #5c8d89; }
+      border: 3px solid #74AEC4; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #5c8d89; }
+      color: #74AEC4; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -77,7 +77,7 @@
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #5c8d89; }
+      color: #74AEC4; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -126,36 +126,19 @@ body {
 #myCanvas {
   display: none; }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0;
   font-weight: 400; }
-  h1.lg-heading, h2.lg-heading, h3.lg-heading {
+  h1.lg-heading,
+  h2.lg-heading,
+  h3.lg-heading {
     font-size: 6rem;
-    font-family: 'Quicksand', sans-serif;
-    overflow: hidden;
-    /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange;
-    /* The typwriter cursor */
-    white-space: nowrap;
-    /* Keeps the content on a single line */
-    margin: 0 auto;
-    /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em;
-    /* Adjust as needed */
-    animation: typing 4s steps(35, end), blink-caret 0.5s step-end infinite; }
-
-@keyframes typing {
-  from {
-    width: 0; }
-  to {
-    width: 100%; } }
-
-@keyframes blink-caret {
-  from, to {
-    border-color: transparent; }
-  50% {
-    border-color: #5c8d89; } }
-  h1.sm-heading, h2.sm-heading, h3.sm-heading {
+    font-family: 'Quicksand', sans-serif; }
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background: rgba(73, 73, 73, 0.5);
@@ -171,7 +154,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #5c8d89; }
+  color: #74AEC4; }
 
 main {
   padding: 4rem;
@@ -181,7 +164,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #5c8d89;
+        color: #74AEC4;
         transition: all 0.5s ease-out; }
   main#home {
     height: 100vh;
@@ -192,7 +175,7 @@ main {
 
 .about-info {
   display: grid;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px; }
 
@@ -200,7 +183,7 @@ main {
   grid-area: bioimage;
   margin: auto;
   border-radius: 50%;
-  border: 2px solid #5c8d89; }
+  border: 2px solid #74AEC4; }
 
 .bio {
   grid-area: bio;
@@ -218,7 +201,7 @@ main {
 .job {
   background: #515151;
   padding: 0.5rem;
-  border-bottom: 5px solid #5c8d89; }
+  border-bottom: 5px solid #74AEC4; }
 
 .projects {
   display: grid;
@@ -229,7 +212,7 @@ main {
     border: 2px solid #fff; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #5c8d89;
+      border-color: #74AEC4;
       transition: all 0.5s ease-out; }
 
 .boxes {
@@ -244,7 +227,7 @@ main {
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem; }
     .boxes div:hover {
-      background: #5c8d89;
+      background: #74AEC4;
       color: #000; }
       .boxes div:hover span {
         color: #000; }
@@ -260,7 +243,7 @@ main {
   margin-bottom: 0.3rem;
   text-align: center; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #5c8d89;
+    background: #74AEC4;
     color: #000; }
 
 .btn-dark {
